@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: React-Client
+  description: This is a dummy React app
+  tags:
+    - react
+    - web
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:guest
+  consumesApis:
+    - api:product-api
+  dependsOn:
+    - component:Product-App
