@@ -12,5 +12,12 @@ spec:
   owner: user:guest
   consumesApis:
     - api:product-api
+    - api:weather-api
+    - api:dummy-product-api
+    - api:Tier1-token-api
+    - api:Tier2-token-api
   dependsOn:
     - component:Product-App
+    - component:weather-app
+    - component:dummy-product-app  
+    - component:Token-Balance-App
